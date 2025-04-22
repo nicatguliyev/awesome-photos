@@ -8,9 +8,9 @@ const SideBar2 = () => {
                 <i className="fas fa-camera-retro"></i>
                 Awesome Photos
             </div>
-            <a href="#home"><i className="fas fa-home"></i> Home</a>
-            <a href="#collections"><i className="fas fa-layer-group"></i> Collections</a>
-            <a href="#favorites"><i className="fas fa-heart"></i> Favorites</a>
+            <button><i className="fas fa-home"></i> Home</button>
+            <button><i className="fas fa-layer-group"></i> Collections</button>
+            <button><i className="fas fa-heart"></i> Favorites</button>
         </div>
 
     );

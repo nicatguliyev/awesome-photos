@@ -1,0 +1,120 @@
+/* .image-card {
+    position: relative;
+
+  }
+  .favorite-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #3a3a3acf;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    transition: all 0.3s ease;
+
+  }
+  .favorite-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+
+  .collect-btn {
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    margin-bottom: 10px;
+    background: #3a3a3acf;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.657);
+    transition: all 0.3s ease;
+
+  }
+  
+  .collect-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .add-btn:hover {
+    background: rgba(0, 0, 0, 0.306);
+  } */
+
+
+  .image-card {
+    position: relative;
+    overflow: hidden; /* animasyonun taşmasını önler */
+  }
+  
+  /* Ortamda gizli başlat */
+  .image-card .favorite-btn,
+  .image-card .collect-btn {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px); /* 10px aşağıda başlasın */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover anında görünür ve yukarı kayar */
+  .image-card:hover .favorite-btn,
+  .image-card:hover .collect-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Mevcut konumlandırma ve stiller */
+  .image-card .favorite-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #3a3a3acf;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .image-card .favorite-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .image-card .collect-btn {
+    position: absolute;
+    bottom: 20px;    /* margin-bottom kaldırıldı, doğrudan bottom */
+    right: 8px;
+    background: #3a3a3acf;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.657);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .image-card .collect-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+  }
+  

@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-.sidenav a {
+.sidenav button {
   width: 80%;
   margin: 10px 0;
   padding: 12px 20px;
@@ -55,21 +55,22 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.sidenav a i {
+.sidenav button i {
   margin-right: 12px;
   font-size: 18px;
   color: #007bff;
 }
 
-.sidenav a:hover {
+.sidenav button:hover {
   background-color: #007bff;
   color: white;
   transform: translateY(-2px);
 }
 
-.sidenav a:hover i {
+.sidenav button:hover i {
   color: white;
 }
 
