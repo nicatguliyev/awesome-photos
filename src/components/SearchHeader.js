@@ -24,7 +24,7 @@ const SearchHeader = () => {
         if (!code) return;
 
 
-        const exchangeCodeForToken = async () => {
+        const getToken = async () => {
             try {
               const response = await axios.post(
                 'https://unsplash.com/oauth/token',
@@ -50,7 +50,7 @@ const SearchHeader = () => {
             }
           };
 
-          exchangeCodeForToken();
+          getToken();
         }, []);
 
         const handleLogin = () => {
