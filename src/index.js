@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Imagecard from './components/Imagecard';
 import ImageList from './components/ImageList';
+import SideBar2 from './components/SideBar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+  <App />
 );
 
 reportWebVitals();
