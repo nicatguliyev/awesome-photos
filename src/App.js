@@ -5,6 +5,10 @@ import SearchHeader from './components/SearchHeader';
 import SideBar from './components/SideBar';
 import ImageList from './components/ImageList';
 import axios from 'axios';
+import ProfileButton from './components/ProfileButton';
+import { FaUserCircle } from "react-icons/fa";
+
+
 
 function App() {
 
@@ -19,7 +23,7 @@ function App() {
     `&response_type=code` +
     `&scope=public+read_user`;
 
- 
+
   const [accessToken, setAccessToken] = useState(null);
   const [error, setError] = useState(null);
 
@@ -64,11 +68,12 @@ function App() {
       <div className='body'>
         <SideBar />
         <div className="main">
-          <SearchHeader accessToken = {accessToken} error = {error} />
+          <SearchHeader accessToken = {accessToken} error = {error} clientId = {CLIENT_ID} clientSecret = {CLIENT_SECRET}/>
           <ImageList />
         </div>
       </div>
     </div>
+
   );
 }
 

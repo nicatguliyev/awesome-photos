@@ -1,0 +1,22 @@
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .profile-button__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 8px; 
+  }
+  
+  .profile-button__username {
+    margin-left: auto; 
+  }
+  
